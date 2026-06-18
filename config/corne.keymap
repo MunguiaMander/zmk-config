@@ -33,13 +33,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1    |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | LCTRL| BTCLR | BT0 | BT1 | BT2 | BT3 |   | LFT | DWN |  UP | RGT |     |      |
-// | ESC  |       | HOME| PGUP| PGDN| END |   |     |     |     |     |     |      |
+// | LCTRL| BTCLR | BT0 | BT1 | BT2 | BT3 |   | LFT | DWN |  UP | RGT |  :  |  ;   |
+// | ESC  |       | HOME| PGUP| PGDN| END |   |     |     |  <  |  >  |PSCRN| DEL  |
 //                      | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &kp LCTRL &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp COLON &kp SEMI
-   &kp ESC  &trans    &kp HOME       &kp PG_UP       &kp PG_DN       &kp END         &trans   &trans   &trans &trans    &trans &kp DEL
+   &kp ESC  &trans    &kp HOME       &kp PG_UP       &kp PG_DN       &kp END         &trans   &trans   &kp LT &kp GT    &kp PSCRN &kp DEL
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
